@@ -1,3 +1,15 @@
 .personal-info, .skills {
     margin: 20px;
 }
+
+h1 {
+    color: blue;
+}
+
+th, td {
+    border: 1px solid black;
+}
+
+table {
+    border: 2px solid black;
+}
