@@ -65,6 +65,14 @@
         <h1>Section Aditional</h1>
         <input type="text" id="inputValue" placeholder="Write Something">
         <button onclick="EditInformation()"> Change Information </button>
+        <div id="output"></div>
     </section>
+
+    <script>
+        function EditInformation() {
+            var inputValue = document.getElementById("inputAnswer").value;
+            document.getElementById("output").innerText= "Valor ingresado: " + inputValue;
+        }
+    </script>
 </body>
 </html>
