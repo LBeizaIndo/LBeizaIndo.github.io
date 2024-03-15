@@ -61,18 +61,22 @@
             </tr>
         </table>
     </section>
-    <section class="extra-section">
-        <h1>Section Aditional</h1>
-        <input type="text" id="inputValue" placeholder="Write Something">
-        <button onclick="EditInformation()"> Change Information </button>
-        <div id="output"></div>
-    </section>
 
-    <script>
-        function EditInformation() {
-            var inputValue = document.getElementById("inputAnswer").value;
-            document.getElementById("output").innerText= "Valor ingresado: " + inputValue;
-        }
-    </script>
+    <section class="extra-section">
+        <section id="dynamic-section">
+            <h1>Dynamic Content</h1>
+            <p>In this section the content entered by the user will be placed.</p>
+        </section>
+
+        <input type="text" id="textInput" placeholder="Enter new content">
+        <button onclick="changeSectionContent()">Change Content</button>
+
+        <script>
+            function changeSectionContent() {
+                var inputValue = document.getElementById("textInput").value;
+                document.getElementById("dynamic-section").innerHTML = "<h1>Dynamic Content</h1><p>" + inputValue + "</p>";
+            }
+        </script>
+    </section>
 </body>
 </html>
